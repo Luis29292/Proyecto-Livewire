@@ -8,7 +8,7 @@
                 <th scope="col">Correo Electrónico</th>
                 <th scope="col">Teléfono</th>
                 <th scope="col">Edad</th>
-                <th scope="col">Estado</th>
+                <th scope="col">Ciudad</th>
                 <th scope="col">Acción</th>
             </tr>
         </thead>

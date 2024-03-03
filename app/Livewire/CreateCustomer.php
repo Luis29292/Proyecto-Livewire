@@ -20,8 +20,13 @@ class CreateCustomer extends Component
 
     public function save()
     {
-
-        // dd ($this->all());
+        $this->validate([
+            'name' => 'required',
+            'email' => 'required|email', // Modified: Added email validation
+            'phone' => 'required|digits:10',
+            'age' => 'required|numeric|min:18',
+            'estado' => 'required',
+        ]);
         Customer::create($this->all());
         $this->reset();
     }

@@ -6,7 +6,7 @@
           <p class="card-text">Correo: {{$customer->email}}</p>
           <p>Teléfono: {{$customer->phone}}</p>
           <p>Edad: {{$customer->age}}</p>
-          <p>Estado: {{$customer->estado}}</p>
+          <p>Ciudad: {{$customer->estado}}</p>
           <a href="{{route('customers')}}" class="btn btn-primary">Regresar</a>
         </div>
       </div>
