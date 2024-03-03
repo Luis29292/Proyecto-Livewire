@@ -18,6 +18,9 @@ class Customers extends Component
     {
         return view('livewire.customers');
     }
-
+    public function delete($id)
+    {
+        Customer::destroy($id);
+    }
 
 }

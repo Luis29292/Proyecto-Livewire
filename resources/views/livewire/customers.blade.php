@@ -7,6 +7,8 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Correo Electrónico</th>
                 <th scope="col">Teléfono</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Acción</th>
             </tr>
         </thead>
@@ -17,10 +19,12 @@
                     <td>{{$customer->name}}</td>
                     <td>{{$customer->email}}</td>
                     <td>{{$customer->phone}}</td>
+                    <td>{{$customer->age}}</td>
+                    <td>{{$customer->estado}}</td>
                     <td>
                         <button wire:navigate href="/customers/{{$customer->id}}" class="btn btn-primary btn-sm">Ver</button>
                         <button class="btn btn-secondary btn-sm">Editar</button>
-                        <button class="btn btn-danger btn-sm">Borrar</button>
+                        <button wire:click="delete({{$customer->id}})" class="btn btn-danger btn-sm">Borrar</button>
                     </td>
                 </tr>
             @endforeach

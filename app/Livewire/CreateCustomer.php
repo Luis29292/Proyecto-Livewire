@@ -10,6 +10,8 @@ class CreateCustomer extends Component
     public $name = '';
     public $email = '';
     public $phone = '';
+    public $age = '';
+    public $estado = '';
 
     public function render()
     {

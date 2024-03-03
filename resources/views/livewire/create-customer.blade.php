@@ -18,6 +18,14 @@
                   <label class="form-label">Teléfono</label>
                   <input wire:model="phone" type="text" class="form-control" >
                 </div>
+                <div class="mb-3">
+                  <label class="form-label">Edad</label>
+                  <input wire:model="age" type="text" class="form-control" >
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Estado</label>
+                  <input wire:model="estado" type="text" class="form-control" >
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
 

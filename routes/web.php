@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/customers/create', CreateCustomer::class);
-Route::get('/customers', Customers::class);
+Route::get('/customers', Customers::class)->name('customers');
 Route::get('/customers/{customer}', ViewCustomer::class);
